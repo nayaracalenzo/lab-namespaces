@@ -48,11 +48,6 @@ test -f /debian/bin/bash && echo "OK: bash existe"
 ## 3) Entrar no mini‑container com root mapeado
 ### Comando padrão (tente sem sudo primeiro)
 ```bash
-unshare --user --map-root-user --mount --uts --ipc --pid --fork chroot /debian bash
-```
-
-Se der `Operation not permitted`, use fallback:
-```bash
 sudo unshare --user --map-root-user --mount --uts --ipc --pid --fork chroot /debian bash
 ```
 
