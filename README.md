@@ -22,7 +22,7 @@ sudo apt install -y debootstrap util-linux iproute2 procps
 
 Valide:
 ```bash
-debootstrap --help | head
+sudo debootstrap --help | head
 unshare --help | head
 ip a | head
 ps aux | head
